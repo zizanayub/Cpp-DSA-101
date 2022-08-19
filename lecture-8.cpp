@@ -30,3 +30,33 @@ int main()
 
 // OUTPUT: Input: 1, 
 // "First"
+
+
+
+
+
+
+//BASIC of SWITCH CASE (With CHAR)
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   char ch = '1';
+   switch( ch )
+   {
+   case 1:
+       cout << "First" << endl;
+       break;
+   case '1':
+       cout << "Character 1" << endl;
+       break;
+   default:
+       cout << "It's a default case!" << endl;
+   }
+}
+
+
+
+//OUTPUT: "Character 1" 
