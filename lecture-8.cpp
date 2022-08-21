@@ -123,3 +123,46 @@ int main()
 //OUTPUT: Input: 2
 //"It's 2"
 //"It's 3"
+
+
+
+
+
+
+
+
+//NESTED SWITCH CASE
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    char ch = '1';
+    int n = 1;
+
+    switch(ch)
+    {
+    case 1:
+        cout << "First" << endl;
+        break;
+
+    case '1':
+        switch (n)
+        {
+        case 1:
+            cout << "Value of number is: " <<n;
+            break;
+        }
+        break;
+
+        case 2:
+            cout << "Two" << endl;
+            break;
+    }
+}
+
+
+//OUTPUT: "Value of Number is 1"
