@@ -114,8 +114,8 @@ int main()
        cout << "It's 3" << endl;
    }
 
-    First it will execute matched cases, then it will execute all of
-    following cases after that if break is not added!
+//     First it will execute matched cases, then it will execute all of
+//     following cases after that if break is not added!
 }
 
 
