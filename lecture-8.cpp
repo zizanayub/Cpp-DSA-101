@@ -166,3 +166,84 @@ int main()
 
 
 //OUTPUT: "Value of Number is 1"
+
+
+
+
+
+
+//Let's have function's basic
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   int a,b;
+   cin >> a >> b;
+
+   int ans = 1;
+
+   for ( int i = 1; i <= b ; i++ )
+   {
+       ans = ans * a;
+   }
+
+   cout << ans;
+
+   return 0;
+}
+
+
+
+//OUTPUT: 2 3
+//Answer: 8
+
+
+
+
+
+
+
+
+
+//First Function
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int power (int a,int b)
+{
+   int ans = 1;
+   for (int i = 1; i <= b; i++)
+   {
+       ans = ans * a;
+   }
+   return ans;
+}
+
+
+int main()
+{
+   int a,b;
+   cin >> a >> b;
+
+   int answer = power (a,b);
+   cout << answer;
+}
+
+
+
+//OUTPUT: 3 2
+//Answer: 9
+
+
+
+
+
+
+
+
+
+
