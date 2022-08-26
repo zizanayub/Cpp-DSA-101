@@ -247,3 +247,85 @@ int main()
 
 
 
+//Another try without function parameters 
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+int power()
+{
+   int a, b;
+   cin >> a >> b;
+
+   int ans = 1;
+   for ( int i = 1; i <= b; i++ )
+   {
+       ans = ans * a;
+   }
+   return ans;
+}
+
+int main()
+{
+   int answer = power();
+   cout << "The answer: " << answer << endl;
+}
+
+
+
+//OUTPUT: Input: 2 3
+//Answer: 8
+
+
+
+
+
+
+
+
+
+//Printing the same function multiple times
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int power (int num1, int num2)
+{
+   int ans = 1;
+
+   for ( int i = 1; i <= num2; i++)
+   {
+       ans = ans * num1;
+   }
+   return ans;
+}
+
+
+
+
+int main()
+{
+   int n;
+   cout << "Enter the number of inputs: ";
+   cin >> n;
+   int a,b;
+
+
+   for (int i = 1; i <= n; i++)
+   {
+   cin >> a >> b;
+   int answer = power(a,b);
+   cout << "The answer is: " << answer << endl;
+   }
+   }
+
+
+//OUTPUT
+// Input: Enter the number of inputs: 2
+// Output:
+// 2 3
+// The answer is: 8
+// 4 2
+// The answer is: 16
