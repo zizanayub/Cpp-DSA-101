@@ -412,3 +412,47 @@ int main()
 
 //The program ran correct as the num1 variable was existed in the power function. 
 
+
+
+
+
+
+
+
+
+//Odd-even Identification
+#include<bits/stdc++.h>
+using namespace std;
+
+bool isEven(int num)
+{
+    if(num&1)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    if (isEven(n))
+    {
+        cout << "This number is odd" ;
+    }
+    else
+    {
+        cout << "This number is even";
+    }
+
+}
+
+
+//OUTPUT
+//Input: 33
+//"This number is odd"
