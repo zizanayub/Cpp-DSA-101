@@ -329,3 +329,86 @@ int main()
 // The answer is: 8
 // 4 2
 // The answer is: 16
+
+
+
+
+
+
+
+
+
+//Local Variables
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int power(int num1, int num2)
+{
+    cout << a;
+
+   
+
+    for (int i = 1; i <= num2; i++)
+    {
+        ans = ans * num1;
+    }
+    return ans;
+}
+
+int main()
+{
+    int a,b;
+    cin >> a >> b;
+    int answer = power(a,b);
+    cout << answer;
+}
+
+
+//error: 'a' was not declared in this scope|
+//Beacause a is the variable of main function. a was not declared in power function. 
+
+
+
+
+
+
+
+
+
+//Local Variables-2 (Num)
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int power(int num1, int num2)
+{
+
+    cout << num1 << endl;
+    int ans = 1;
+
+    for (int i = 1; i <= num2; i++)
+    {
+        ans = ans * num1;
+    }
+    return ans;
+}
+
+int main()
+{
+    int a,b;
+    cin >> a >> b;
+    int answer = power(a,b);
+    cout << answer;
+}
+
+
+//OUTPUT:
+//Input: 2 3
+//Answer:
+//2 
+//8
+
+//The program ran correct as the num1 variable was existed in the power function. 
+
