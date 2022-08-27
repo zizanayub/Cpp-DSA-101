@@ -499,3 +499,35 @@ int main()
 //OUTPUT
 //InputL 7 2
 // The answer is: 21
+
+
+
+
+
+
+
+
+//Counting Number Function (Using void)
+#include<bits/stdc++.h>
+using namespace std;
+
+void countNumber(int n)
+{
+    for (int i = 1; i <= n; i++)
+    {
+        cout << i << " ";
+    }
+}
+
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    countNumber(n);
+}
+
+//OUTPUT
+//Input: 5
+// 1 2 3 4 5 
