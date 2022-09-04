@@ -546,7 +546,7 @@ int main()
 using namespace std;
 
 
-int checkPrime(int n)
+bool checkPrime(int n)
 {
    for ( int i = 2; i < n ; i++ )
    {
