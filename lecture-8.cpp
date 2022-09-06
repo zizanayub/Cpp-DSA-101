@@ -578,3 +578,44 @@ int main()
 //OUTPUT
 //3
 //Prime Number 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Pass by value
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void pass(int n)
+{
+    n++;
+    cout << "The value of n in the pass is: "<< n << endl;
+
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    pass(n);
+    cout << "The value of n is: " << n << endl;
+}
+
+//OUTPUT
+// Input: 4
+// The value of n is the pass is: 5
+// The value of n is: 4
+
