@@ -588,6 +588,80 @@ int main()
 
 
 
+//Exercise-1
+//Arithmetic Progression
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int ap(int n)
+{
+    int formula = 3 * n + 7;
+    return formula;
+}
+
+
+int main()
+{
+    int n;
+    cin >> n;
+    int result = ap(n);
+    cout << "The result of the formula is: " << result;
+}
+
+
+//OUTPUT
+//3
+//The result of the formula is: 16. 
+
+
+
+
+
+
+
+
+
+
+//Exercise-2
+//fibonacci
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void fibo(int n)
+{
+    int a = 0;
+    int b = 1;
+    int c = a + b;
+
+    cout << a << " " << b << " " << c <<" ";
+
+    for ( int i = 1; i <= n-3; i++ )
+    {
+        a = b;
+        b = c;
+        c = a + b;
+        cout << c << " ";
+    }
+    cout << endl;
+    cout << "The " << n <<"th number of the series is: " << c;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+    fibo(n);
+}
+
+//OUTPUT
+//4
+// 0 1 1 2
+// The 4th number of the series is: 2
+
+
+
 
 
 
