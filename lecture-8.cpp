@@ -693,3 +693,30 @@ int main()
 // The value of n is the pass is: 5
 // The value of n is: 4
 
+
+
+
+
+
+
+
+
+//Short Exercise
+//1
+#include<bits/stdc++.h>
+using namespace std;
+void update(int a)
+{
+    a = a / 2;
+}
+
+int main()
+{
+    int a = 10;
+    update(a);
+    cout << a << endl;
+}
+
+
+//10
+//Correct
