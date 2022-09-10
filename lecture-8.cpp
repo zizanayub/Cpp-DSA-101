@@ -720,3 +720,55 @@ int main()
 
 //10
 //Correct
+
+
+
+
+
+
+
+
+
+//2
+#include<bits/stdc++.h>
+using namespace std;
+int update(int a)
+{
+    a -= 5;
+    return a;
+}
+
+int main()
+{
+    int a = 15;
+    update(a);
+    cout << a << endl;
+}
+
+//15
+//Correct
+
+
+
+
+
+
+
+//3
+#include<bits/stdc++.h>
+using namespace std; 
+int update(int a)
+{
+    int ans = a * a;
+    return ans;
+}
+
+int main()
+{
+    int a = 14;
+    a = update(a);
+    cout << a << endl;
+}
+
+//196
+//Correct
