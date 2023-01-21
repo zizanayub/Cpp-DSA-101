@@ -388,6 +388,198 @@ int main()
   }
   
 }
+
+  
+  
+  
+  
+//5.5.10
+//Continue Statement
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  for (int i = 0; i <= n; i++)
+  {
+    cout << "Hi" << endl;
+    cout << "Hey" << endl;
+    continue;
+    cout << " I am showing the continue statement here" << endl;
+  }
+}
+
+  
+  
+  
+  
+//5.6
+//Scopes of variables
+
+//5.6.1
+#include<bits/stdc++.h>
+using namespace std;
+  
+int main()
+{
+  cout << a << endl;
+}
+  
+//error; use of undeclared identifier 'a'
+
+  
+  
+  
+  
+//5.6.2
+#include<bits/stdc++.h>
+using namespace std;
+  
+int main()
+{
+  int a;
+  cout << a << endl;
+}
+// Compiler will give a garbage value
+  
+  
+  
+  
+  
+//5.6.3
+#include<bits/stdc++.h>
+using namespace std;
+  
+int main()
+{
+  int a = 3;
+  cout << a << endl;
+}
+//3
+  
+  
+  
+  
+  
+//5.6.4
+#include<bits/stdc++.h>
+using namespace std;
+  
+int main()
+{
+  int a = 3;
+  cout << a << endl;
+  if (true)
+  {
+    cout << a << endl;
+  }
+} 
+//If I declare any variable outside if condition, I can use it inside the if condition too! 
+
+
+  
+  
+  
+//5.6.5
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int a = 3;
+  cout << a << endl;
+  if(true){
+    int a = 5;
+    cout << a << endl;
+  }
+  cout << a << endl;
+}
+  
+/* 
+3 
+5
+3
+*/
+  
+//Inside the if condition, a = 5 will be applicable! 
+  
+  
+  
+  
+  
+//5.6.6
+#include<bits/stdc++.h>
+using namespace std;
+  
+int main()
+{
+  int a = 3;
+  cout << a << endl;
+  if(true){
+    int b = 5;
+    cout << b << endl;
+  }
+  cout << b << endl;
+}
+  
+//Use of undefined identifier 'b'
+  
+  
+  
+  
+  
+//5.6.7
+#include<bits/stdc++.h>
+using namespace std;
+  
+int main()
+{
+  int a = 3;
+  cout << a << endl;
+  if(true)
+  {
+    int b = 4;
+    cout << b << endl;
+  }
+  int b = 2;
+  cout << b << endl;
+}
+/*
+3
+4
+2
+*/
+  
+  
+  
+  
+  
+//5.6.8
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int a = 3;
+  cout << a << endl;
+  int a = 5;
+  cout << b << endl;
+}
+  
+//Redefinition of 'a'
+  
   
 
   
+
+//5.6.9
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int i = 1;
+  for (; i <=8; i++)
+  {
+    cout << i << " ";
+  }
+}
+  
+//It will look for i defined before  outside of the 'for' block
