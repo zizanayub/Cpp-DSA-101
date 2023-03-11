@@ -1,3 +1,37 @@
+//12.1
+//Linear Search 
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int arr[6] = {3, 7, 0, -2, 5,9};
+    int key;
+
+    cin >> key;
+
+    for (int i = 0; i < 6; i++)
+    {
+        if(arr[i] == key)
+        {
+            cout << i;
+        }
+    }
+    cout << "no answer!";
+}
+
+
+
+
+
+
+
+
+
+
 //Binary Search 
 //Implementation
 //TC: O(logN)
